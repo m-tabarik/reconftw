@@ -109,7 +109,8 @@ find /var/log -type f -delete
 find /tmp -type f -delete
 rm -rf /root/.cache
 rm -rf /root/go
-eot
+eot 
+    
 
 COPY amass_config.ini /root/.config/amass/config.ini
 COPY github_tokens.txt /root/Tools/.github_tokens
