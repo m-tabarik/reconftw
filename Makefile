@@ -26,6 +26,6 @@ sync:
 
 upload:
 	cd ~/$(PRIVATE_REPO) && \
-		git add . && \
+		git add . && \    
 		git commit -m "Data upload" && \
 		git push origin $(shell git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
